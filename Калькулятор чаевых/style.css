@@ -1,0 +1,113 @@
+html {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  body {
+    font-family: Roboto;
+  background: rgb(222,190,131);
+background: radial-gradient(circle, rgba(222,190,131,1) 0%, rgba(145,72,23,1) 100%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  #ENG {
+	 font-family: mr_KindlyJasmineG; 
+  text-align: right;
+ margin-top: 5px;
+ margin-right: 10px;
+  }
+ 
+@font-face {
+
+font-family: Diamond Girl Skynny_C Skynny; /* Имя шрифта */
+src: url(fonts/19689.otf); /* Путь к файлу со шрифтом */
+
+}
+
+@font-face {
+
+font-family: mr_KindlyJasmineG; /* Имя шрифта */
+
+src: url(fonts/19516.otf); /* Путь к файлу со шрифтом */
+
+}
+ 
+  #container {
+	  font-family: Diamond Girl Skynny_C Skynny;
+    height: 550px;
+    width: 400px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+  }
+  
+  
+  h1 {
+    background: #1f030c;
+    color: white;
+    margin: 0;
+    padding: 10px 100px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  p {
+	  font-size: 30px;
+	  font-family: mr_KindlyJasmineG;
+    padding-left: 20px;
+  }
+  
+  button {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: #1d1517;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+  }
+  
+  button:hover {
+    background: #4c2827;
+    border-bottom-color: #111;
+  }
+  
+  button:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  #totalTip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  #totalTip:before {
+    content: "Итого:";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  #totalTip sup {
+    font-size: 20px;
+    top: -18px;
+  }
+  
+  #totalTip small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+  }

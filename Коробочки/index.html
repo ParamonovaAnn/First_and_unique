@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>
+China Box
+</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div id="container">
+        <form id="form">
+            <h1>China Box</h1>
+
+            <p class="fon">Size of the box</p>
+            <div class="radio_button_container">
+                <input type="radio" name="size" id="small" value="small" checked>
+                <label for="small">small</label> 
+    
+                <input type="radio" name="size" id="large" value="large" >
+                <label for="large">large</label> 
+
+                <input type="radio" name="size" id="extra_large" value="extra_large" >
+                <label for="extra_large">extra_large</label> 
+            </div>
+
+            <p class="fon">Garnish </p>
+            <div class="garnish_container">
+                <input type="radio" name="garnish" id="rice" value="rice" checked>
+                <label for="rice">rice</label>
+
+                <input type="radio" name="garnish" id="noodles" value="noodles" >
+                <label for="noodles">noodles</label>
+
+               
+            </div>
+
+            <p class="fon">Meat</p>
+            <div class="checkbox_container">
+                <input type="checkbox" name="add" id="pig" value="pig" checked>
+                <label for="pig">pig</label>
+
+                <input type="checkbox" name="add" id="meat" value="meat" >
+                <label for="meat">meat</label>
+
+                <input type="checkbox" name="add" id="chicken" value="chicken" >
+                <label for="chicken">chicken</label>
+				
+				<input type="checkbox" name="add" id="salmon" value="salmon" >
+                <label for="salmon">salmon</label>
+                
+				<input type="checkbox" name="add" id="shrimps" value="shrimps" >
+                <label for="shrimp">shrimps</label>
+	
+            </div>
+
+            <p class="fon">Additional topping</p>
+            <div class="checkbox_container">
+                <input type="checkbox" name="add" id="bread_crumbs" value="bread_crumbs" >
+                <label for="bread_crumbs">bread_crumbs</label>
+
+                <input type="checkbox" name="add" id="extra_souse" value="extra_souse" >
+                <label for="extra_souse">extra_souse</label>
+
+                <input type="checkbox" name="add" id="tofu" value="tofu" >
+                <label for="tofu">tofu</label>
+            </div>
+
+            <input type="submit" id = "calculate" value="Calculate">
+        </form>
+
+        <div id="expense">
+            <span id="prise">0.00</span><sup>$</sup> <br>
+            <span id="calories">00</span> <small>kcals'</small>
+        </div>
+ 
+    </div>
+
+    <script src="box.js"></script>
+</body>
+</html>

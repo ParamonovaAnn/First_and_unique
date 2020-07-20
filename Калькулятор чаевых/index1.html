@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор чаевых</title>
+  </head>
+  <body>
+
+    <div id="container">
+      <!-- CALCULATOR start -->
+      <div id="calculator">
+        <form>
+		
+	<div id = "ENG"> <a href="index_ENG.html">ENG</a> </div>
+          <p>Сколько вы заплатили?</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+			<select class="input-group-text" id="currency">
+                                <option>₽</option>
+                                <option>$</option>
+								<option>€</option>
+                            </select>
+              
+			  
+            </div>
+            <input type="text" id="bill_count" class="form-control" placeholder="Введите сумму">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+
+          <p>Оцените обслуживание</p>
+        
+          <select class="custom-select" id="service_quality">
+            <option selected>Выберите...</option>
+            <option value="0.3">30&#37; &#45; Превосходно</option>
+            <option value="0.2">20&#37; &#45; Хорошо</option>
+            <option value="0.15">15&#37; &#45; Нормально</option>
+            <option value="0.1">10&#37; &#45; Плохо</option>
+            <option value="0.05">5&#37; &#45; Ужасно</option>
+          </select>
+
+          <br><p>Укажите кол-во людей</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Люди</span>
+            </div>
+            <input type="text" id="people_num" class="form-control" placeholder="Число людей">
+          </div>
+
+          <button type="button" id="calculate">Посчитать</button>
+
+        </form>
+      </div>
+      <!-- CALCULATOR end -->
+      <!-- TIPS start -->
+      <div id="totalTip">
+        <span id="tip">0.00</span>
+        <small id="each">Спасибо!</small>
+      </div>
+      <!-- TIPS end -->
+    </div>
+
+
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
