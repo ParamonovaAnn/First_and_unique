@@ -4,8 +4,17 @@ var pencil = document.querySelector("#pencil");
 var saveBtn = document.querySelector(".save");
 var clearBtn = document.querySelector(".clear");
 var tipsBtn = document.querySelector(".tipBtn");
-var closeBtn = document.querySelector(".closebtn");
+var factsBtn = document.querySelector(".factsBtn");
+var closeBtn = document.querySelectorAll(".closebtn");
 var overlay = document.getElementById("overlay");
+var overlay_cats = document.getElementById("overlay-cat-facts");
+
+
+export function fun() {
+  factsBtn.addEventListener("click", function () {
+    overlay_cats.style.height = "100%";
+  });
+}
 
 export function keypress(callback) {
   // Add todo element to todo list
@@ -49,10 +58,14 @@ export const tips = () => {
 };
 
 export const close = () => {
-  closeBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    overlay.style.height = "0";
-  });
+  let arr = Array.from(closeBtn);
+  arr.map(elem => {
+    elem.addEventListener("click", function (event) {
+      event.preventDefault();
+      overlay.style.height = "0";
+      overlay_cats.style.height = "0";
+    });
+  })
 };
 
 export const clear_todo = () => {
